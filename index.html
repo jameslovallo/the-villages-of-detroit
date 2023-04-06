@@ -1,0 +1,99 @@
+<body>
+  <app-layout>
+    <div class="home">
+      <!--
+        header
+      -->
+      <section class="header">
+        <img src="/@/assets/logo.svg" style="width: 200px" />
+        <div>
+          <h1>
+            <span style="font-size: 1rem">Welcome To</span>
+            <br />The Villages
+          </h1>
+          <ardi-typer
+            base="Making our neighborhoods stronger through"
+            pause="5000"
+            speed="150"
+            words="diversity, equity, inclusion"
+            cursor="true"
+          ></ardi-typer>
+        </div>
+      </section>
+      <!--
+        video
+      -->
+      <section class="video">
+        <h2>We are The Villages</h2>
+        <div class="two-600">
+          <ardi-youtube vid="VahMzpGxRhg" style="width: 100%"></ardi-youtube>
+          <div class="ctas">
+            <spa-link href="/what-we-do/" class="arrow">
+              Our Strategy
+            </spa-link>
+            <spa-link href="" class="arrow">
+              Subscribe to Our Newsletter!
+            </spa-link>
+          </div>
+        </div>
+      </section>
+      <!--
+        about
+      -->
+      <section>
+        <h2>About Us</h2>
+        <p>
+          The Villages CDC is a non-profit organization dedicated to
+          accelerating economic development in the Villages of Detroit, a
+          collection of neighborhoods located on Detroit’s east side. Through
+          business attraction, community advocacy and organizing, and urban
+          design and planning, the Villages CDC seeks to strengthen and preserve
+          the social and economic fabric of one of the most diverse and
+          longstanding communities in Detroit.
+        </p>
+      </section>
+      <!--
+        get involved
+      -->
+      <section>
+        <h2>Get Involved</h2>
+        <div class="auto-grid">
+          <div class="card">
+            <img src="/@/assets/volunteer.webp" alt="" />
+            <div class="actions">
+              <spa-link href="/volunteer/" class="arrow"> Volunteer </spa-link>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/@/assets/community.webp" alt="" />
+            <div class="actions">
+              <spa-link href="/our-community/" class="arrow">
+                Our Community
+              </spa-link>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/@/assets/events.webp" alt="" />
+            <div class="actions">
+              <spa-link href="/events/" class="arrow">
+                Upcoming Events
+              </spa-link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--
+      modules
+    -->
+    <script
+      src="https://unpkg.com/ardi/demos/youtube/youtube.js"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/ardi/demos/typer/typer.js"
+      type="module"
+    ></script>
+  </app-layout>
+  <script src="/@/main.js" type="module"></script>
+</body>
