@@ -1,0 +1,60 @@
+<body>
+  <app-layout>
+    <h1>Contact Us</h1>
+    <div class="auto-grid" style="--col-size: 300px">
+      <div>
+        <h2>Contact Information</h2>
+        <ul class="link-list">
+          <li>
+            <list-item
+              href="mailto:info@thevillagesofdetroit.com"
+              icon="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"
+              primary="Email"
+              secondary="info@thevillagesofdetroit.com"
+            ></list-item>
+          </li>
+          <li>
+            <list-item
+              href="tel:3134862900"
+              icon="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"
+              primary="Phone"
+              secondary="(313) 486-2900"
+            ></list-item>
+          </li>
+          <li>
+            <list-item
+              href="https://www.facebook.com/thevillagesofdetroit/"
+              icon="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"
+              primary="Facebook"
+              secondary="@thevillagesofdetroit"
+            ></list-item>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Volunteer or Donate</h2>
+        <ul class="link-list">
+          <li>
+            <list-item
+              href="/volunteer"
+              icon="M13 24C9.74 24 6.81 22 5.6 19L2.57 11.37C2.26 10.58 3 9.79 3.81 10.05L4.6 10.31C5.16 10.5 5.62 10.92 5.84 11.47L7.25 15H8V3.25C8 2.56 8.56 2 9.25 2S10.5 2.56 10.5 3.25V12H11.5V1.25C11.5 .56 12.06 0 12.75 0S14 .56 14 1.25V12H15V2.75C15 2.06 15.56 1.5 16.25 1.5C16.94 1.5 17.5 2.06 17.5 2.75V12H18.5V5.75C18.5 5.06 19.06 4.5 19.75 4.5S21 5.06 21 5.75V16C21 20.42 17.42 24 13 24Z"
+              primary="Volunteer"
+            ></list-item>
+          </li>
+          <li>
+            <list-item
+              href="/donate"
+              icon="M9.06,1.93C7.17,1.92 5.33,3.74 6.17,6H3A2,2 0 0,0 1,8V10A1,1 0 0,0 2,11H11V8H13V11H22A1,1 0 0,0 23,10V8A2,2 0 0,0 21,6H17.83C19,2.73 14.6,0.42 12.57,3.24L12,4L11.43,3.22C10.8,2.33 9.93,1.94 9.06,1.93M9,4C9.89,4 10.34,5.08 9.71,5.71C9.08,6.34 8,5.89 8,5A1,1 0 0,1 9,4M15,4C15.89,4 16.34,5.08 15.71,5.71C15.08,6.34 14,5.89 14,5A1,1 0 0,1 15,4M2,12V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V12H13V20H11V12H2Z"
+              primary="Donate"
+            ></list-item>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h2>Leave a Message</h2>
+    <contact-form></contact-form>
+    <script src="/@/components/contact-form.js" type="module"></script>
+    <script src="/@/components/list-item.js" type="module"></script>
+  </app-layout>
+  <script src="/@/main.js" type="module"></script>
+</body>

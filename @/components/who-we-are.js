@@ -60,6 +60,7 @@ const staff = [
 
 ardi({
   tag: 'who-we-are',
+  shadow: false,
   template() {
     return html`
       <div class="auto-grid">
@@ -81,5 +82,4 @@ ardi({
       </div>
     `
   },
-  css: `@import "/@/css/style.css";`,
 })
