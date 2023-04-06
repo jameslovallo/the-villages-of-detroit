@@ -35,13 +35,22 @@ button {
   cursor: pointer;
 }
 
+iframe,
 img,
 svg {
   display: block;
 }
 
+iframe,
 img {
   width: 100%;
+}
+
+iframe {
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  height: 550px;
+  overflow: hidden;
 }
 
 h1,

@@ -3,6 +3,7 @@ const globals = [
   'app-footer',
   'app-layout',
   'app-nav',
+  'list-item',
   'mark-down',
   'spa-link',
   'spa-root',
@@ -10,6 +11,7 @@ const globals = [
 globals.forEach((c) => import(`/@/components/${c}.js`))
 
 import('//unpkg.com/ardi@latest/demos/dialog/dialog.js')
+import('https://unpkg.com/ardi/demos/youtube/youtube.js')
 
 // fade in gracefully when components are loaded
 const all = ['ardi-dialog', ...globals]

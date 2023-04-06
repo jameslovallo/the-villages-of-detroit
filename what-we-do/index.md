@@ -1,24 +1,24 @@
-# Strategic Plan 2023
+## Strategic Plan 2023
 
 Approved by a unanimous vote of the board of directors on February 23, 2023
 
-## Our Mission
+### Our Mission
 
 The Villages CDC supports and advocates for the development of inclusive places and neighborhoods within The Villages.
 
-## Our Vision
+### Our Vision
 
 The Villages will be known and respected throughout Detroit as the model for flourishing, integrated neighborhoods, known especially for their diversity, authenticity, and resourcefulness.
 
-## Our Values
+### Our Values
 
 Inclusion, Diversity, Sustainability, Equity, Community Involvement
 
-## Who We Serve
+### Who We Serve
 
 Residents, neighborhood associations, and businesses within the footprint stretching from Mount Elliott Avenue in the west to St. Jean Street in the east, from Mack Avenue in the north going all the way down to the Detroit River. The Villages district consists of nearly 14,000 Detroiters.
 
-## Our Programs and Services
+### Our Programs and Services
 
 The Villages CDC accomplishes its mission by convening a variety of stakeholders, including residents and businesses, to execute projects within the following areas:
 
@@ -49,7 +49,7 @@ The Villages CDC accomplishes its mission by convening a variety of stakeholders
 	</div>
 </div>
 
-## Our Goals for 2023
+### Our Goals for 2023
 
 Events & Engagement
 
@@ -70,7 +70,7 @@ Engage 1000 neighbors through bi-weekly newsletter and virtual listening session
 - Host three in person strategy briefings with surveys (Oct 2023)
 - Increase newsletter emailing list to 700 (Dec 2023)
 
-## Housing
+### Housing
 
 - Continue Keep It In the Family
 - Continue the second cohort of 10 households (June 2023))
@@ -95,7 +95,7 @@ Housing policy advocacy
 
 - Leverage our learnings to help the City and other funders to implement more programs to clear deeds and provide wills for residents
 
-## Infrastructure
+### Infrastructure
 
 Support neighborhood association infrastructure goals, up to 14.
 
@@ -111,7 +111,7 @@ Advocate for DTE policy changes at the state level
 
 - Continue to build off of successes in 2022 by working with the same coalition of partners to have DTE begin embracing truly sustainable and equitable renewable projects (Dec 2023)
 
-## Streets
+### Streets
 
 Traffic calming
 
@@ -142,7 +142,7 @@ Sidewalks
 
 - Assist neighborhood groups in getting more funding for sidewalk repairs through the Department of Public Works
 
-## Our Commitment to Anti-Racism
+### Our Commitment to Anti-Racism
 
 At The Villages Community Development Corporation, we believe in the values of diversity, equity, and inclusion. More specifically, we believe in the variety of thoughts, ideas, beliefs, experiences, and people's inclusion regardless of their race, color, sex, language, national origin, religion, identity, or age. Our goal is to make all the Villages — East Village, Gold Coast, North Village, Islandview, Joseph Berry Subdivision, West Village, and Indian Village — a great place to live, work, and recreate. In addition to supporting the principles of diversity and inclusion, the Villages Community Development Corporation is on a journey to be an anti-racism organization.
 
