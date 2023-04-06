@@ -46,13 +46,8 @@ ardi({
       tag.replaceWith(newTag)
     })
   },
-  handleTitle(doc) {
-    let htmlH1 = doc.match(/<h1.+<\/h1>/)
-    if (htmlH1) htmlH1 = htmlH1[0].replace(/<h1.*?>/, '').replace('</h1>', '')
-    let htmlTitle = doc.match(/<title>.+<\/title>/)
-    if (htmlTitle)
-      htmlTitle = [0].replace('<title>', '').replace('</title>', '')
-    document.title = htmlTitle || htmlH1
+  handleTitle() {
+    document.title = document.querySelector('h1').innerText
   },
   createTag(target, type, attrs) {
     const tag = document.createElement(type)

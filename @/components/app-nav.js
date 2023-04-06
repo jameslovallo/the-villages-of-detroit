@@ -43,9 +43,11 @@ ardi({
   },
   css: /* css */ `
     nav {
+      align-items: center;
       display: flex;
       gap: 1rem;
-      padding: 1rem;
+      min-height: 4rem;
+      padding: 0 1rem;
     }
     spa-link:first-of-type {
       margin-right: auto;
