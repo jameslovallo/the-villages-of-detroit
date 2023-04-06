@@ -60,24 +60,34 @@ ardi({
       text-decoration: none;
     }
     [slot=opener] {
+      align-items: center;
       background: none;
-      border: none;
       border-radius: 50%;
+      border: none;
+      display: flex;
+      height: 48px;
+      justify-content: center;
       margin-left: -8px;
-      padding: .5rem;
+      width: 48px;
     }
     [slot=opener]:hover,
     [slot=opener]:focus {
       background: var(--surface-heavy);
     }
     [slot=opener] svg {
+      display: block;
       fill: currentcolor;
       width: 24px;
     }
     [part=drawer-links] {
-      display: grid;
-      gap: 1rem;
-      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5rem;
+      height: calc(100vh - 2rem);
+    }
+    [part=drawer-links] spa-link::part(link) {
+      font-size: 1.25rem;
     }
     nav > spa-link:not(:first-of-type):not(:last-of-type) {
       display: none;
