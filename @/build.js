@@ -15,7 +15,7 @@ ${head.trim()}
 ${body.trim()}
 </html>`
 
-const head = `
+let head = `
 <head>
   <meta name="prebuilt" content="true">
   ${Object.keys(headJSON)
@@ -31,6 +31,9 @@ const head = `
     )
     .join('\n\t')}
 </head>`
+
+if (head.includes('<meta name="description"')) {
+}
 
 const getFile = (path) =>
   fs.readFileSync(path, { encoding: 'utf8' }, (err, data) =>

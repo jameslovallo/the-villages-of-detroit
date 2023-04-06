@@ -1,8 +1,18 @@
 {
   "meta": [
     {
+      "charset": "UTF-8"
+    },
+    {
       "name": "viewport",
       "content": "width=device-width, initial-scale=1"
+    },
+    {
+      "name": "description",
+      "content": "The Villages CDC is a non-profit organization dedicated to accelerating economic development in the Villages of Detroit, a collection of neighborhoods located on Detroit’s east side."
+    },
+    {
+      "image": "/@/assets/meta.jpeg"
     }
   ],
   "link": [
