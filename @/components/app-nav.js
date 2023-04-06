@@ -55,7 +55,7 @@ ardi({
       align-items: center;
       color: inherit;
       display: flex;
-      font-size: 14px;
+      font-size: 1rem;
       height: 100%;
       text-decoration: none;
     }
@@ -82,7 +82,7 @@ ardi({
     nav > spa-link:not(:first-of-type):not(:last-of-type) {
       display: none;
     }
-    @media (min-width: 650px) {
+    @media (min-width: 700px) {
       nav ardi-dialog[drawer] {
         display: none;
       }

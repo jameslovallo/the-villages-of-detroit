@@ -36,14 +36,14 @@ ardi({
       text-decoration: none;
     }
     [part=icon-wrapper] {
-      background: darkslateblue;
+      background: var(--primary);
       border-radius: 50%;
       flex-shrink: 0;
       padding: .5rem;
     }
     svg {
       display: block;
-      fill: white;
+      fill: var(--on-primary);
       width: 1.5rem;
     }
     [part=text-wrapper] {

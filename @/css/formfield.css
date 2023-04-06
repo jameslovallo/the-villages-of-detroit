@@ -1,0 +1,227 @@
+.form__field > *,
+.material-input {
+  width: 100%;
+}
+
+.material-input {
+  --valid: green;
+  --invalid: red;
+  --padding: 0.5rem;
+  --border-width: 1px;
+  --border-radius: 4px;
+  height: 48px;
+  max-height: 48px;
+  min-height: 48px;
+  position: relative;
+}
+.material-input input,
+.material-input select,
+.material-input textarea {
+  appearance: none;
+  background: transparent;
+  border-radius: var(--border-radius);
+  border: none;
+  color: inherit;
+  display: block;
+  font-size: 16px;
+  height: 48px;
+  margin: 0;
+  padding: 0 var(--padding);
+  width: 100%;
+}
+.material-input input:focus,
+.material-input select:focus,
+.material-input textarea:focus {
+  outline: none;
+}
+.material-input input:required + div > label > span:after,
+.material-input select:required + div > label > span:after,
+.material-input textarea:required + div > label > span:after {
+  content: '*';
+  left: 0.1em;
+  position: relative;
+  transform: scale(0.5);
+}
+.material-input select {
+  color: inherit;
+  width: 100%;
+}
+.material-input select option {
+  color: initial;
+}
+.material-input select ~ i {
+  background: linear-gradient(
+    to bottom right,
+    transparent 0%,
+    transparent 50%,
+    currentColor 50%,
+    currentColor 100%
+  );
+  content: '';
+  display: block;
+  height: 6px;
+  position: absolute;
+  right: 12px;
+  top: calc(50% - 4px);
+  transform: rotate(45deg);
+  width: 6px;
+}
+.material-input-outline {
+  display: flex;
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.material-input-outline:before,
+.material-input-outline:after {
+  border: var(--border-width) solid var(--border);
+  content: '';
+  width: var(--padding);
+}
+.material-input-outline:before {
+  border-bottom-left-radius: var(--border-radius);
+  border-right: none;
+  border-top-left-radius: var(--border-radius);
+}
+.material-input-outline:after {
+  border-bottom-right-radius: var(--border-radius);
+  border-left: none;
+  border-top-right-radius: var(--border-radius);
+  flex-grow: 1;
+}
+.material-input-outline label {
+  align-items: center;
+  border-bottom: var(--border-width) solid var(--border);
+  border-top: var(--border-width) solid var(--border);
+  display: flex;
+}
+.material-input-outline label span {
+  transition: transform 0.25s;
+  will-change: transform;
+}
+input:focus + .material-input-outline,
+input:not(:placeholder-shown) + .material-input-outline,
+textarea:focus + .material-input-outline,
+textarea:not(:placeholder-shown) + .material-input-outline,
+select:focus + .material-input-outline,
+select[data-active] + .material-input-outline,
+select[data-active]:focus + .material-input-outline {
+  --border: var(--primary);
+}
+input:focus + .material-input-outline label,
+input:not(:placeholder-shown) + .material-input-outline label,
+textarea:focus + .material-input-outline label,
+textarea:not(:placeholder-shown) + .material-input-outline label,
+select:focus + .material-input-outline label,
+select[data-active] + .material-input-outline label,
+select[data-active]:focus + .material-input-outline label {
+  border-top: var(--border-width) solid transparent;
+  font-size: 12px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+input:focus + .material-input-outline label span,
+input:not(:placeholder-shown) + .material-input-outline label span,
+textarea:focus + .material-input-outline label span,
+textarea:not(:placeholder-shown) + .material-input-outline label span,
+select:focus + .material-input-outline label span,
+select[data-active] + .material-input-outline label span,
+select[data-active]:focus + .material-input-outline label span {
+  position: relative;
+  transform: translatey(-24px);
+}
+input:focus + .material-input-outline,
+textarea:focus + .material-input-outline,
+select:focus + .material-input-outline,
+select[data-active]:focus + .material-input-outline {
+  --border-width: 2px;
+}
+input:focus + .material-input-outline label,
+textarea:focus + .material-input-outline label,
+select:focus + .material-input-outline label,
+select[data-active]:focus + .material-input-outline label {
+  color: var(--primary);
+}
+.material-input--textarea {
+  display: grid;
+  height: auto;
+  max-height: none;
+}
+.material-input--textarea:after {
+  content: attr(data-replicated-value) ' ';
+  visibility: hidden;
+  white-space: pre-wrap;
+}
+.material-input--textarea label {
+  align-items: flex-start;
+  padding-top: 14px;
+}
+.material-input--textarea textarea {
+  height: auto;
+  max-height: none;
+  min-height: 7.25em;
+  overflow-y: hidden;
+  resize: none;
+}
+.material-input--textarea:after,
+.material-input--textarea textarea {
+  box-sizing: border-box;
+  font: inherit;
+  grid-area: 1/1/2/2;
+  padding: 14px var(--padding);
+}
+select[data-active] + .material-input-outline {
+  --border: currentColor;
+  --border-width: 1px;
+}
+.material-input
+  input:not(:focus):not(:placeholder-shown):valid
+  + .material-input-outline,
+.material-input
+  textarea:not(:focus):not(:placeholder-shown):valid
+  + .material-input-outline {
+  --border: var(--valid);
+  color: var(--valid);
+}
+.material-input
+  input:not(:focus):not(:placeholder-shown):invalid
+  + .material-input-outline {
+  --border: var(--invalid);
+  color: var(--invalid);
+}
+.material-input input:not(:focus):not(:placeholder-shown):invalid,
+.material-input
+  input:not(:focus):not(:placeholder-shown):invalid
+  + .material-input-outline {
+  animation-timing-function: ease-in-out;
+  animation: headShake 1s;
+  will-change: transform;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+@keyframes headShake {
+  0% {
+    transform: translateX(0);
+  }
+  6.5% {
+    transform: translateX(-6px);
+  }
+  18.5% {
+    transform: translateX(5px);
+  }
+  31.5% {
+    transform: translateX(-3px);
+  }
+  43.5% {
+    transform: translateX(2px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+}
