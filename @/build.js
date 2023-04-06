@@ -32,9 +32,6 @@ let head = `
     .join('\n\t')}
 </head>`
 
-if (head.includes('<meta name="description"')) {
-}
-
 const getFile = (path) =>
   fs.readFileSync(path, { encoding: 'utf8' }, (err, data) =>
     err ? console.log(err) : data
