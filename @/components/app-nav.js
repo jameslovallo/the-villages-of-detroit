@@ -51,6 +51,9 @@ ardi({
     spa-link:first-of-type {
       margin-right: auto;
     }
+    spa-link:hover {
+      color: var(--primary);
+    }
     spa-link::part(link) {
       align-items: center;
       color: inherit;
