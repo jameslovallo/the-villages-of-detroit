@@ -22,7 +22,7 @@ Residents, neighborhood associations, and businesses within the footprint stretc
 
 The Villages CDC accomplishes its mission by convening a variety of stakeholders, including residents and businesses, to execute projects within the following areas:
 
-<div class="auto-grid what-we-do" style="--col-size: 200px">
+<div class="two-600 what-we-do">
 	<div class="card">
 		<div class="content">
 			<img src="/@/assets/focus/events.svg">

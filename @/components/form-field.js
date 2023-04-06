@@ -89,7 +89,7 @@ ardi({
       target.value = `${first}${second}${third}`.substr(0, 14)
     }
   },
-  ready() {
+  handleInput() {
     const phone = this.querySelector('[type=tel]')
     if (phone) phone.addEventListener('input', (e) => this.formatPhone(e))
     const textareaWrapper = this.querySelector('.material-input--textarea')
@@ -99,6 +99,10 @@ ardi({
         textareaWrapper.dataset.replicatedValue = textarea.value
       })
     }
+    this.init = true
+  },
+  updated() {
+    if (!this.init) this.handleInput()
   },
   template() {
     this.innerHTML = this.fieldType()

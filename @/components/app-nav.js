@@ -43,7 +43,6 @@ ardi({
   },
   css: /* css */ `
     nav {
-      box-shadow: 0 0 3px rgba(0,0,0,0.25);
       display: flex;
       gap: 1rem;
       padding: 1rem;

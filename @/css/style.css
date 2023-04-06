@@ -107,7 +107,7 @@ spa-link.arrow:focus::part(link) {
 
 .auto-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--col-size, 175px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(var(--col-size), 1fr));
   grid-gap: 1rem;
 }
 
@@ -130,10 +130,10 @@ spa-link.arrow:focus::part(link) {
 }
 
 @media (min-width: 768px) {
-  .two-768 {
+  *.two-768 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .three-768 {
+  *.three-768 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -187,8 +187,9 @@ spa-link.arrow:focus::part(link) {
 
 ardi-dialog[modal]::part(dialog) {
   border: 1px solid var(--border);
-  max-height: 80vh;
-  max-width: 400px;
+  max-height: 75vh;
+  max-width: 75vw;
+  width: 400px;
 }
 
 button.close {

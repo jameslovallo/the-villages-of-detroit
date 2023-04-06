@@ -63,7 +63,7 @@ ardi({
   shadow: false,
   template() {
     return html`
-      <div class="auto-grid">
+      <div class="auto-grid" style="--col-size: 175px">
         ${staff.map(
           (p) => html`
             <ardi-dialog modal>
