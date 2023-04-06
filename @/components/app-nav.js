@@ -50,6 +50,7 @@ ardi({
       padding: 0 1rem;
     }
     spa-link:first-of-type {
+      font-weight: bold;
       margin-right: auto;
     }
     spa-link:hover {
