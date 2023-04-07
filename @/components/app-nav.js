@@ -37,12 +37,17 @@ ardi({
       align-items: center;
       display: flex;
       gap: 1rem;
-      min-height: 4rem;
-      padding: 0 1rem;
+      padding: 1rem;
     }
     spa-link:first-of-type {
       font-weight: bold;
       margin-right: auto;
+    }
+    spa-link:last-of-type::part(link) {
+      background: var(--primary);
+      border-radius: 3rem;
+      color: var(--on-primary);
+      padding: .5rem 1rem;
     }
     spa-link:hover {
       color: var(--primary);
@@ -88,7 +93,7 @@ ardi({
     nav > spa-link:not(:first-of-type):not(:last-of-type) {
       display: none;
     }
-    @media (min-width: 700px) {
+    @media (min-width: 768px) {
       nav ardi-dialog[drawer] {
         display: none;
       }
