@@ -297,6 +297,7 @@ button.close:focus {
 /* events */
 
 snappy-calendar {
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 0.5rem;
 }
