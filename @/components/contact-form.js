@@ -46,7 +46,9 @@ ardi({
 			border-radius: 3rem;
 			color: var(--on-primary);
 			cursor: pointer;
-			padding: .5rem 1rem;
+      letter-spacing: 1;
+			padding: .75rem 1.5rem;
+      text-transform: uppercase;
 		}
 	`,
 })

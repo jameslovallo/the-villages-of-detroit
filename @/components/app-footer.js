@@ -6,7 +6,14 @@ ardi({
   template() {
     return html`
       <footer>
-        <p><a class="arrow">Subscribe to Our Newsletter</a></p>
+        <p>
+          <a
+            class="arrow"
+            href="https://thevillagesofdetroit.us10.list-manage.com/subscribe/post?u=491160fdb6c928b779465812e&id=df5c91e13e"
+          >
+            Subscribe to Our Newsletter
+          </a>
+        </p>
         <div part="footer-nav">
           ${nav.map(
             (page) => html`<spa-link href=${page.href}>${page.label}</spa-link>`

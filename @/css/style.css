@@ -7,7 +7,7 @@
   --body-color: black;
   --heading-color: black;
   color-scheme: light dark;
-  font-family: sans-serif;
+  font-family: arial;
   scroll-behavior: smooth;
 }
 
@@ -255,12 +255,13 @@ button.close:focus {
 @media (min-width: 600px) {
   .home .ctas {
     align-items: center;
-    background: darkslateblue;
-    color: white;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: none;
     border-bottom-right-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
+    color: var(--heading-color);
     display: grid;
-    height: 66%;
     margin-left: -1rem;
     padding: 1rem;
     width: calc(100% + 1rem);
