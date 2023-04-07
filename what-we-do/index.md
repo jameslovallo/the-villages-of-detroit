@@ -25,25 +25,37 @@ The Villages CDC accomplishes its mission by convening a variety of stakeholders
 <div class="two-600 what-we-do">
 	<div class="card">
 		<div class="content">
-			<img src="/@/assets/focus/events.svg">
+			<img
+				src="/@/assets/focus/events.svg"
+				alt="A man and a woman eating in a park with wine and lights."
+			>
 			<h3>Events & Engagement</h3>
 		</div>
 	</div>
 	<div class="card">
 		<div class="content">
-			<img src="/@/assets/focus/housing.svg">
+			<img
+				src="/@/assets/focus/housing.svg"
+				alt="Construction workers building a house."
+			>
 			<h3>Housing</h3>
 		</div>
 	</div>
 	<div class="card">
 		<div class="content">
-			<img src="/@/assets/focus/infrastructure.svg">
+			<img
+				src="/@/assets/focus/infrastructure.svg"
+				alt="A street with people waling on the sidewalk, cars, and mixed housing."
+			>
 			<h3>Infrastructure</h3>
 		</div>
 	</div>
 	<div class="card">
 		<div class="content">
-			<img src="/@/assets/focus/business.svg">
+			<img
+				src="/@/assets/focus/business.svg"
+				alt="A business owner at their business."
+			>
 			<h3>Small Business</h3>
 		</div>
 	</div>
