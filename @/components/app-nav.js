@@ -43,7 +43,7 @@ ardi({
       font-weight: bold;
       margin-right: auto;
     }
-    spa-link:last-of-type::part(link) {
+    nav > spa-link:last-of-type::part(link) {
       background: var(--primary);
       border-radius: 3rem;
       color: var(--on-primary);
