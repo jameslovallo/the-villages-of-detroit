@@ -1,14 +1,5 @@
+import nav from '../nav.js'
 import ardi, { html } from '//unpkg.com/ardi'
-
-const nav = [
-  { label: 'The Villages', href: '/' },
-  { label: 'What We Do', href: '/what-we-do' },
-  { label: 'Our Community', href: '/our-community' },
-  { label: 'Events', href: '/events' },
-  { label: 'Who We Are', href: '/who-we-are' },
-  { label: 'Contact', href: '/contact' },
-  { label: 'Donate', href: '/donate' },
-]
 
 ardi({
   tag: 'app-nav',
