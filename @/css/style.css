@@ -249,7 +249,6 @@ button.close:focus {
   background: transparent;
   border: 1px solid var(--border);
   border-radius: 0.5rem;
-  max-width: 40ch;
   overflow: hidden;
 }
 
