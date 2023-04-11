@@ -66,10 +66,10 @@ ardi({
       border-radius: 50%;
       border: none;
       display: flex;
-      height: 48px;
+      height: 40px;
       justify-content: center;
       margin-left: -8px;
-      width: 48px;
+      width: 40px;
     }
     [slot=opener]:hover,
     [slot=opener]:focus {
