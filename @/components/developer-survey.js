@@ -5,6 +5,7 @@ ardi({
   props: {
     property: [Number],
   },
+  template: () => '',
   displayResponses(data) {
     const property =
       new URLSearchParams(window.location.search).get('property') ||
@@ -12,19 +13,12 @@ ardi({
     const questions = data[0]
     const response = data[property || 1]
 
-    this.root.innerHTML += `
-			<p
-				class="h3"
-				style="color: var(--primary); line-height: calc(1em + 2rem);"
-			>
-				${response[property]}
-			</p>
-		`
+    this.root.innerHTML += `<h2>Developer Survey Response</h2>`
 
     for (let i = 1; i < questions.length; i++) {
       this.root.innerHTML += `
-				<p><b>${questions[i]}</b></p>
-				<p>${response[i] || 'No reponse'}</p>
+				<p part="question">${questions[i]}</p>
+				<p part="answer">${response[i] || 'No reponse'}</p>
 			`
     }
   },
@@ -35,4 +29,13 @@ ardi({
       .then((res) => res.json())
       .then((data) => this.displayResponses(data.values))
   },
+  css: /* css */ `
+    [part=question] {
+      color: var(--primary);
+      margin: 0;
+    }
+    [part=answer] {
+      margin: 0 0 1rem;
+    }
+  `,
 })
