@@ -5,7 +5,6 @@ ardi({
   props: {
     property: [Number],
   },
-  template: () => '',
   displayResponses(data) {
     const property =
       new URLSearchParams(window.location.search).get('property') ||
@@ -29,6 +28,7 @@ ardi({
       .then((res) => res.json())
       .then((data) => this.displayResponses(data.values))
   },
+  template: () => '',
   css: /* css */ `
     [part=question] {
       color: var(--primary);
