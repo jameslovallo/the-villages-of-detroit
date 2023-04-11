@@ -17,7 +17,7 @@ ardi({
 				class="h3"
 				style="color: var(--primary); line-height: calc(1em + 2rem);"
 			>
-				${response[2]}
+				${response[property]}
 			</p>
 		`
 
