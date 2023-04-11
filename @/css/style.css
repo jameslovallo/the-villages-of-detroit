@@ -305,3 +305,32 @@ snappy-calendar {
 snappy-calendar::part(grid) {
   padding: 0 1rem;
 }
+
+/* developments */
+
+.developments .info {
+  --body-color: black;
+  --heading-color: black;
+}
+
+.developments .info h3 {
+  margin: 0;
+}
+
+.developments .info p {
+  align-items: center;
+  display: flex;
+  gap: 0.5em;
+}
+
+.developments .info p:before {
+  color: var(--key);
+  content: '⬤';
+}
+
+.developments .info spa-link.arrow,
+.developments .info spa-link.arrow::part(link),
+.developments .info spa-link.arrow:hover::part(link),
+.developments .info spa-link.arrow:focus::part(link) {
+  color: black;
+}
