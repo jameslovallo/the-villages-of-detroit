@@ -54,6 +54,6 @@
       "href": "/@/assets/favicon.ico"
     },
     { "rel": "preconnect", "href": "https://unpkg.com" },
-    { "rel": "preload", "href": "/@/assets/video_poster.jpg" }
+    { "rel": "preload", "as": "image", "href": "/@/assets/video_poster.jpg" }
   ]
 }
