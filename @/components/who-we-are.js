@@ -68,7 +68,10 @@ ardi({
           (p) => html`
             <ardi-dialog modal>
               <div slot="opener" class="card">
-                <img src=${`/@/assets/staff/${p.name}.webp`} alt=${p.name} />
+                <img
+                  src=${`/@/assets/who-we-are/${p.name}.webp`}
+                  alt=${p.name}
+                />
                 <div class="actions">
                   <button class="arrow">${p.name}</button>
                 </div>
