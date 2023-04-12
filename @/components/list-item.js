@@ -6,6 +6,7 @@ ardi({
     primary: [String],
     secondary: [String],
     href: [String],
+    target: [String, null],
     icon: [String],
   },
   template() {
@@ -22,9 +23,9 @@ ardi({
           : ''}
       </div>
     `
-    return this.href.startsWith('/')
-      ? html`<spa-link href=${this.href}>${content}</spa-link>`
-      : html`<a href=${this.href}>${content}</a>`
+    return !this.href.startsWith('/') || this.target
+      ? html`<a href=${this.href} target=${this.target}>${content}</a>`
+      : html`<spa-link href=${this.href}>${content}</spa-link>`
   },
   css: /* css */ `
     a,
