@@ -13,8 +13,9 @@ ardi({
         src=${this.src}
         poster=${this.poster}
         playsinline
-        @ended=${() => {
+        @ended=${(e) => {
           this.playing = false
+          e.target.src = this.src
         }}
       ></video>
       <button
