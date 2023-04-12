@@ -58,5 +58,10 @@ ardi({
 			display: block;
 			fill: var(--on-primary);
 		}
+    @media (prefers-color-scheme: light) {
+      button {
+        border-color: var(--primary);
+      }
+    }
 	`,
 })
