@@ -1,5 +1,5 @@
+import ardi, { html } from 'https://unpkg.com/ardi'
 import nav from '../nav.js'
-import ardi, { html } from '//unpkg.com/ardi'
 
 ardi({
   tag: 'app-nav',

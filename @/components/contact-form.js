@@ -1,4 +1,4 @@
-import ardi, { html } from '//unpkg.com/ardi'
+import ardi, { html } from 'https://unpkg.com/ardi'
 import '/@/components/form-field.js'
 
 ardi({

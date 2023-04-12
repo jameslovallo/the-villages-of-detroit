@@ -10,7 +10,7 @@ const globals = [
 ]
 globals.forEach((c) => import(`/@/components/${c}.js`))
 
-import('//unpkg.com/ardi@latest/demos/dialog/dialog.js')
+import('https://unpkg.com/ardi/demos/dialog/dialog.js')
 
 // fade in gracefully when components are loaded
 const all = ['ardi-dialog', ...globals]

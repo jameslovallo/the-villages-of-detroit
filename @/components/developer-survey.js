@@ -1,4 +1,4 @@
-import ardi from '//unpkg.com/ardi'
+import ardi from 'https://unpkg.com/ardi'
 
 ardi({
   tag: 'developer-survey',
