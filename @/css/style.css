@@ -250,14 +250,18 @@ button.close:focus {
   overflow: hidden;
 }
 
-.home .ctas {
+.home .video .ctas {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  margin: 0.5rem 0;
 }
 
 @media (min-width: 600px) {
-  .home .ctas {
+  .home .video .two-600 {
+    gap: 0;
+  }
+  .home .video .ctas {
     align-items: center;
     background: var(--surface);
     border: 1px solid var(--border);
@@ -266,9 +270,8 @@ button.close:focus {
     border-top-right-radius: 0.5rem;
     color: var(--heading-color);
     display: grid;
-    margin-left: -1rem;
+    margin: 0;
     padding: 1rem;
-    width: calc(100% + 1rem);
   }
 }
 

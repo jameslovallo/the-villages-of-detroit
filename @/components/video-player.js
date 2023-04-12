@@ -48,18 +48,13 @@ ardi({
 			bottom: 1rem;
 			cursor: pointer;
 			height: 40px;
+			left: 1rem;
 			position: absolute;
-			right: 1rem;
 			width: 40px;
 		}
 		button svg {
+			display: block;
 			fill: var(--on-primary);
-		}
-		@media (min-width: 600px) {
-			button {
-				right: unset;
-				left: 1rem;
-			}
 		}
 	`,
 })
