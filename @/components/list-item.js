@@ -35,6 +35,10 @@ ardi({
       gap: 1rem;
       text-decoration: none;
     }
+    a:hover,
+    spa-link:hover::part(link) {
+      color: var(--primary);
+    }
     [part=icon-wrapper] {
       background: var(--primary);
       border-radius: 50%;

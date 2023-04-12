@@ -49,10 +49,7 @@ img {
 }
 
 iframe {
-  border: 1px solid var(--border);
-  border-radius: 0.5rem;
   height: 550px;
-  overflow: hidden;
 }
 
 h1,
@@ -245,7 +242,8 @@ button.close:focus {
   line-height: 1;
 }
 
-.home .video ardi-youtube {
+.home .video video-player {
+  aspect-ratio: 16/9;
   background: transparent;
   border: 1px solid var(--border);
   border-radius: 0.5rem;
