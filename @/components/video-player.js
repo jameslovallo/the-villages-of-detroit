@@ -46,7 +46,7 @@ ardi({
 		}
 		button {
 			background: var(--primary);
-			border: 2px solid var(--on-primary);
+			border: 2px solid var(--primary);
 			border-radius: 50%;
 			bottom: 1rem;
 			cursor: pointer;
@@ -59,9 +59,9 @@ ardi({
 			display: block;
 			fill: var(--on-primary);
 		}
-    @media (prefers-color-scheme: light) {
+    @media (prefers-color-scheme: dark) {
       button {
-        border-color: var(--primary);
+        border-color: var(--on-primary);
       }
     }
 	`,
