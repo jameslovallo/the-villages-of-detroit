@@ -75,7 +75,12 @@ ardi({
               </div>
               <h3>${p.name}</h3>
               <p style="font-size: 14px">${p.description}</p>
-              <button slot="closer" class="close" aria-label="close"></button>
+              <button
+                slot="closer"
+                class="close"
+                aria-label="close"
+                title="close"
+              ></button>
             </ardi-dialog>
           `
         )}

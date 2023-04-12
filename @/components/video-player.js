@@ -18,6 +18,8 @@ ardi({
         }}
       ></video>
       <button
+        aria-label=${this.playing ? 'pause' : 'play'}
+        title=${this.playing ? 'pause' : 'play'}
         @click=${() => {
           this.playing = !this.playing
           this.refs.video[this.playing ? 'play' : 'pause']()
