@@ -1,113 +1,119 @@
 <body>
-	<app-layout>
-		<div class="home">
-			<!-- header -->
-			<section class="header">
-				<img
-					src="/@/assets/logo.svg"
-					alt="A colorful, stylized map of the The Villages."
-					height="127px"
-					width="200px"
-					style="margin-right: 2rem; width: 200px"
-				/>
-				<div style="margin: 1rem 0">
-					<h1>
-						<div style="font-size: 1.5rem">Welcome To</div>
-						<div style="margin: 0.5rem 0">The Villages</div>
-					</h1>
-					<ardi-typer
-						base="Stronger neighborhoods through"
-						pause="3000"
-						speed="150"
-						words="diversity, equity, inclusion"
-						cursor="true"
-					></ardi-typer>
-				</div>
-			</section>
-			<!-- video -->
-			<section class="video">
-				<h2>We are The Villages</h2>
-				<div class="two-600">
-					<video-player
-						src="/@/assets/home/video.mp4"
-						poster="/@/assets/home/video_poster.jpg"
-					></video-player>
-					<div class="ctas">
-						<ul class="link-list" style="margin: 0">
-							<li>
-								<list-item
-									href="/what-we-do"
-									icon="M2,22V20C2,20 7,18 12,18C17,18 22,20 22,20V22H2M11.3,9.1C10.1,5.2 4,6.1 4,6.1C4,6.1 4.2,13.9 9.9,12.7C9.5,9.8 8,9 8,9C10.8,9 11,12.4 11,12.4V17C11.3,17 11.7,17 12,17C12.3,17 12.7,17 13,17V12.8C13,12.8 13,8.9 16,7.9C16,7.9 14,10.9 14,12.9C21,13.6 21,4 21,4C21,4 12.1,3 11.3,9.1Z"
-									primary="Read Our Strategic Plan"
-								></list-item>
-							</li>
-							<li>
-								<list-item
-									href="https://thevillagesofdetroit.us10.list-manage.com/subscribe/post?u=491160fdb6c928b779465812e&id=df5c91e13e"
-									icon="M22 5.5H9C7.9 5.5 7 6.4 7 7.5V16.5C7 17.61 7.9 18.5 9 18.5H22C23.11 18.5 24 17.61 24 16.5V7.5C24 6.4 23.11 5.5 22 5.5M22 9.17L15.5 12.5L9 9.17V7.5L15.5 10.81L22 7.5V9.17M5 16.5C5 16.67 5.03 16.83 5.05 17H1C.448 17 0 16.55 0 16S.448 15 1 15H5V16.5M3 7H5.05C5.03 7.17 5 7.33 5 7.5V9H3C2.45 9 2 8.55 2 8S2.45 7 3 7M1 12C1 11.45 1.45 11 2 11H5V13H2C1.45 13 1 12.55 1 12Z"
-									primary="Subscribe to Our Newsletter"
-								></list-item>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<!-- about -->
-			<section>
-				<h2>About Us</h2>
-				<p>
-					The Villages CDC is a non-profit organization dedicated to
-					accelerating economic development in the Villages of Detroit, a
-					collection of neighborhoods located on Detroit’s east side. Through
-					business attraction, community advocacy and organizing, and urban
-					design and planning, the Villages CDC seeks to strengthen and preserve
-					the social and economic fabric of one of the most diverse and
-					longstanding communities in Detroit.
-				</p>
-			</section>
-			<!-- get involved -->
-			<section>
-				<h2>Get Involved</h2>
-				<div class="two-600 three-768">
-					<div class="card">
-						<img
-							src="/@/assets/home/volunteer.webp"
-							alt="A man and woman in a park. The woman is pointing at something out of view."
-						/>
-						<div class="actions">
-							<spa-link href="/volunteer/" class="arrow">Volunteer</spa-link>
-						</div>
-					</div>
-					<div class="card">
-						<img
-							src="/@/assets/home/community.webp"
-							alt="A man and woman sitting in front of a coffee shop."
-						/>
-						<div class="actions">
-							<spa-link href="/our-community/" class="arrow">
-								Our Community
-							</spa-link>
-						</div>
-					</div>
-					<div class="card">
-						<img
-							src="/@/assets/home/events.webp"
-							alt="A man and two women sitting in a park."
-						/>
-						<div class="actions">
-							<spa-link href="/events/" class="arrow">
-								Upcoming Events
-							</spa-link>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
-		<!-- modules -->
-		<script
-			src="https://unpkg.com/ardi/demos/typer/typer.js"
-			type="module"
-		></script>
-	</app-layout>
-	<script src="/@/main.js" type="module"></script>
+  <app-layout>
+    <div class="home">
+      <!-- header -->
+      <section class="header">
+        <img
+          src="/@/assets/logo.svg"
+          alt="A colorful, stylized map of the The Villages."
+          height="127px"
+          width="200px"
+          style="margin-right: 2rem; width: 200px"
+        />
+        <div style="margin: 1rem 0">
+          <h1>
+            <div style="font-size: 1.5rem">Welcome To</div>
+            <div style="margin: 0.5rem 0">The Villages</div>
+          </h1>
+          <ardi-typer
+            base="Stronger neighborhoods through"
+            pause="3000"
+            speed="150"
+            words="diversity, equity, inclusion"
+            cursor="true"
+          ></ardi-typer>
+        </div>
+      </section>
+      <!-- video -->
+      <section class="video">
+        <h2>We are The Villages</h2>
+        <div class="two-600">
+          <video-player
+            src="/@/assets/home/video.mp4"
+            poster="/@/assets/home/video_poster.jpg"
+          ></video-player>
+          <div class="ctas">
+            <ul class="link-list" style="margin: 0">
+              <li>
+                <list-item
+                  href="/what-we-do"
+                  icon="M2,22V20C2,20 7,18 12,18C17,18 22,20 22,20V22H2M11.3,9.1C10.1,5.2 4,6.1 4,6.1C4,6.1 4.2,13.9 9.9,12.7C9.5,9.8 8,9 8,9C10.8,9 11,12.4 11,12.4V17C11.3,17 11.7,17 12,17C12.3,17 12.7,17 13,17V12.8C13,12.8 13,8.9 16,7.9C16,7.9 14,10.9 14,12.9C21,13.6 21,4 21,4C21,4 12.1,3 11.3,9.1Z"
+                  primary="Read Our Strategic Plan"
+                ></list-item>
+              </li>
+              <li>
+                <list-item
+                  href="https://thevillagesofdetroit.us10.list-manage.com/subscribe/post?u=491160fdb6c928b779465812e&id=df5c91e13e"
+                  icon="M22 5.5H9C7.9 5.5 7 6.4 7 7.5V16.5C7 17.61 7.9 18.5 9 18.5H22C23.11 18.5 24 17.61 24 16.5V7.5C24 6.4 23.11 5.5 22 5.5M22 9.17L15.5 12.5L9 9.17V7.5L15.5 10.81L22 7.5V9.17M5 16.5C5 16.67 5.03 16.83 5.05 17H1C.448 17 0 16.55 0 16S.448 15 1 15H5V16.5M3 7H5.05C5.03 7.17 5 7.33 5 7.5V9H3C2.45 9 2 8.55 2 8S2.45 7 3 7M1 12C1 11.45 1.45 11 2 11H5V13H2C1.45 13 1 12.55 1 12Z"
+                  primary="Subscribe to Our Newsletter"
+                ></list-item>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- about -->
+      <section>
+        <h2>About Us</h2>
+        <p>
+          The Villages CDC is a non-profit organization dedicated to
+          accelerating economic development in the Villages of Detroit, a
+          collection of neighborhoods located on Detroit’s east side. Through
+          business attraction, community advocacy and organizing, and urban
+          design and planning, the Villages CDC seeks to strengthen and preserve
+          the social and economic fabric of one of the most diverse and
+          longstanding communities in Detroit.
+        </p>
+      </section>
+      <!-- get involved -->
+      <section>
+        <h2>Get Involved</h2>
+        <div class="two-600 three-768">
+          <div class="card">
+            <img
+              src="/@/assets/home/volunteer.webp"
+              alt="A man and woman in a park. The woman is pointing at something out of view."
+              width="512"
+              height="288"
+            />
+            <div class="actions">
+              <spa-link href="/volunteer/" class="arrow">Volunteer</spa-link>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="/@/assets/home/community.webp"
+              alt="A man and woman sitting in front of a coffee shop."
+              width="512"
+              height="288"
+            />
+            <div class="actions">
+              <spa-link href="/our-community/" class="arrow">
+                Our Community
+              </spa-link>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="/@/assets/home/events.webp"
+              alt="A man and two women sitting in a park."
+              width="512"
+              height="288"
+            />
+            <div class="actions">
+              <spa-link href="/events/" class="arrow">
+                Upcoming Events
+              </spa-link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- modules -->
+    <script
+      src="https://unpkg.com/ardi/demos/typer/typer.js"
+      type="module"
+    ></script>
+  </app-layout>
+  <script src="/@/main.js" type="module"></script>
 </body>

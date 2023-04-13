@@ -52,6 +52,10 @@ iframe {
   height: 550px;
 }
 
+img {
+  height: auto;
+}
+
 h1,
 h2,
 h3,
