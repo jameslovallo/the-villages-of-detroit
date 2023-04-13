@@ -70,10 +70,10 @@ ardi({
       border-radius: 50%;
       border: none;
       display: flex;
-      height: 40px;
+      height: 2.5rem;
       justify-content: center;
-      margin-left: -8px;
-      width: 40px;
+      margin-left: -.5rem;
+      width: 2.5rem;
     }
     [slot=opener]:hover,
     [slot=opener]:focus {
@@ -82,7 +82,7 @@ ardi({
     [slot=opener] svg {
       display: block;
       fill: currentcolor;
-      width: 24px;
+      width: 1.5rem;
     }
     [part=drawer-links] {
       display: flex;

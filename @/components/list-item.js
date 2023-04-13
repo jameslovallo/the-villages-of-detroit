@@ -49,6 +49,7 @@ ardi({
     svg {
       display: block;
       fill: var(--on-primary);
+      height: 1.5rem;
       width: 1.5rem;
     }
     [part=text-wrapper] {
