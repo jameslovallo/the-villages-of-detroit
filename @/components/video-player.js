@@ -15,10 +15,12 @@ ardi({
         playsinline
         @click=${() => this.playPause()}
         @timeupdate=${(e) => {
-          this.progress = (e.target.currentTime / e.target.duration) * 100
+          const { currentTime, duration } = e.target
+          if (!isNaN(duration)) this.progress = (currentTime / duration) * 100
         }}
         @ended=${(e) => {
           this.playing = false
+          this.progress = 0
           e.target.src = this.src
         }}
       ></video>
