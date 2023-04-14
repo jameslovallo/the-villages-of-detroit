@@ -14,7 +14,7 @@ ardi({
       <a
         part="link"
         href=${this.href}
-        @mouseover=${this.href.startsWith('./#') ? null : (e) => this.hover(e)}
+        @mouseover=${(e) => appRoot && this.hover(e)}
         @click=${(e) => appRoot && this.click(e)}
       >
         <slot></slot>

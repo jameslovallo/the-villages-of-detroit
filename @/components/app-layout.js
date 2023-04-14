@@ -20,18 +20,5 @@ ardi({
       max-width: 80ch;
       padding: 0 1rem 4rem;
     }
-    :host(.developments.level-1) {
-      height: 100%;
-      display: grid;
-      grid-template-rows: auto 1fr;
-    }
-    :host(.developments.level-1) app-footer {
-      display: none;
-    }
-    :host(.developments.level-1) main {
-      margin: 0;
-      max-width: unset;
-      padding: 0;
-    }
   `,
 })
