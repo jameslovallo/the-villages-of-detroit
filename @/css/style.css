@@ -320,7 +320,6 @@ snappy-calendar::part(grid) {
   display: grid;
   grid-template-rows: auto 1fr;
   height: 100%;
-  opacity: 1;
 }
 
 .developments .info {

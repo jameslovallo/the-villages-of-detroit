@@ -220,3 +220,4 @@ tag.setAttribute(
   'https://maps.googleapis.com/maps/api/js?key=AIzaSyC0mhVPdzcRZkxDIYuokc593p3h2U0nfVg&callback=initMap&libraries=marker&v=beta'
 )
 document.body.appendChild(tag)
+document.body.style.opacity = '1'
