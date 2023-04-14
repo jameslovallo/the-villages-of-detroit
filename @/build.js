@@ -1,7 +1,7 @@
 import { exec } from 'child_process'
 import fs from 'fs'
 import path from 'path'
-import headJSON from './head.json' assert { type: 'json' }
+import headJSON from './head.js'
 
 fs.rmSync('./dist', { recursive: true, force: true })
 

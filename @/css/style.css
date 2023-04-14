@@ -316,9 +316,16 @@ snappy-calendar::part(grid) {
 
 /* developments */
 
+.developments {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+}
+
 .developments .info {
   --body-color: black;
   --heading-color: black;
+  color: black;
 }
 
 .developments .info h3 {

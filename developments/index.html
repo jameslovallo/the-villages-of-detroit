@@ -1,23 +1,34 @@
-<body>
-  <!-- spa-reload -->
-  <app-layout>
-    <style>
-      :root,
-      body {
-        height: 100%;
-      }
-      h1 {
-        display: none;
-      }
-      #map {
-        color: black;
-        height: 100%;
-      }
-    </style>
-    <h1>Developments</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/@/css/style.css" />
+  </head>
+  <body class="developments">
+    <app-nav></app-nav>
     <div id="map"></div>
-    <script src="/developments/map.js" type="module"></script>
-  </app-layout>
-  <script src="/@/main.js" type="module"></script>
-  <!-- update -->
-</body>
+    <script type="module">
+      import head from '/@/head.js'
+      import '/@/components/app-nav.js'
+      import '/@/components/spa-link.js'
+      import 'https://unpkg.com/ardi/demos/dialog/dialog.js'
+      document.title = 'VCDC Development Map'
+      function createTag(target, type, attrs) {
+        const tag = document.createElement(type)
+        Object.keys(attrs).forEach((key) => {
+          tag[key] = attrs[key]
+        })
+        target.appendChild(tag)
+      }
+      Object.keys(head).forEach((tagType) => {
+        head[tagType].forEach((el) => {
+          createTag(document.head, tagType, el)
+        })
+      })
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0mhVPdzcRZkxDIYuokc593p3h2U0nfVg&callback=initMap&libraries=marker&v=beta"
+      defer
+    ></script>
+    <script src="./map.js" type="module"></script>
+  </body>
+</html>
