@@ -344,9 +344,6 @@ snappy-calendar::part(grid) {
   content: '⬤';
 }
 
-.developments .info spa-link.arrow,
-.developments .info spa-link.arrow::part(link),
-.developments .info spa-link.arrow:hover::part(link),
-.developments .info spa-link.arrow:focus::part(link) {
+.developments .info a.arrow {
   color: black;
 }

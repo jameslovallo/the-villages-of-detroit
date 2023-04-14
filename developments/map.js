@@ -206,11 +206,7 @@ window.initMap = () => {
           <div class="info">
             <h3>${marker.title}</h3>
             <p style="--key: ${colors[color]}">${key[color]}</p>
-            ${
-              link
-                ? `<spa-link href="${link}" class="arrow">Learn more</spa-link>`
-                : ''
-            }
+            ${link ? `<a href="${link}" class="arrow">Learn more</a>` : ''}
           </div>
         `)
       infoWindow.open(marker.map, marker)
