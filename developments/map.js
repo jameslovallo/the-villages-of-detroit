@@ -60,12 +60,16 @@ window.initMap = () => {
     marker.addListener('click', () => {
       infoWindow.close()
       infoWindow.setContent(`
-				<div class="info">
-					<h3>${marker.title}</h3>
-					<p style="--key: ${colors[color]}">${key[color]}</p>
-					${link ? `<spa-link href="${link}" class="arrow">Learn more</spa-link>` : ''}
-				</div>
-			`)
+          <div class="info">
+            <h3>${marker.title}</h3>
+            <p style="--key: ${colors[color]}">${key[color]}</p>
+            ${
+              link
+                ? `<spa-link href="${link}" class="arrow">Learn more</spa-link>`
+                : ''
+            }
+          </div>
+        `)
       infoWindow.open(marker.map, marker)
     })
   })
