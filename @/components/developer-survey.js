@@ -21,7 +21,7 @@ ardi({
 			`
     }
   },
-  ready() {
+  created() {
     fetch(
       'https://sheets.googleapis.com/v4/spreadsheets/1A09bCVNcygBPIGPVXMqQdS87BII54Rtw9Dd4Rm9weOI/values/A1:AZ100?key=AIzaSyCSD5oD-d2ORbqI6375p_CnRhdrHXEXM14'
     )
