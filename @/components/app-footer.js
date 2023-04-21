@@ -16,7 +16,7 @@ ardi({
         </p>
         <div part="footer-nav">
           ${nav.map(
-            (page) => html`<spa-link href=${page.href}>${page.label}</spa-link>`
+            (page) => html`<a is="app-link" href=${page.href}>${page.label}</a>`
           )}
         </div>
         <p>© ${new Date().getFullYear()} The Villages of Detroit</p>
@@ -48,15 +48,16 @@ ardi({
         display: flex;
       }
     }
-    [part=footer-nav] spa-link:first-of-type {
+    [part=footer-nav] a:first-of-type {
       display: none;
     }
-    [part=footer-nav] spa-link::part(link) {
+    [part=footer-nav] a {
       color: var(--heading-color);
       text-decoration: none;
     }
-    [part=footer-nav] spa-link:hover::part(link) {
+    [part=footer-nav] a:hover {
       color: var(--primary);
+      text-decoration: underline;
     }
   `,
 })

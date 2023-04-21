@@ -2,7 +2,7 @@ import ardi, { html } from 'https://unpkg.com/ardi'
 import head from '/@/head.js'
 
 ardi({
-  tag: 'spa-root',
+  tag: 'app-root',
   template() {
     return html`<slot></slot>`
   },

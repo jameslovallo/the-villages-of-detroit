@@ -2,10 +2,10 @@
 const globals = [
   'app-footer',
   'app-layout',
+  'app-link',
   'app-nav',
+  'app-root',
   'list-item',
-  'spa-link',
-  'spa-root',
   'video-player',
 ]
 globals.forEach((c) => import(`/@/components/${c}.js`))

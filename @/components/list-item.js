@@ -25,19 +25,17 @@ ardi({
     `
     return !this.href.startsWith('/') || this.target
       ? html`<a href=${this.href} target=${this.target}>${content}</a>`
-      : html`<spa-link href=${this.href}>${content}</spa-link>`
+      : html`<a is="app-link" href=${this.href}>${content}</a>`
   },
   css: /* css */ `
-    a,
-    spa-link::part(link) {
+    a {
       align-items: center;
       color: inherit;
       display: flex;
       gap: 1rem;
       text-decoration: none;
     }
-    a:hover,
-    spa-link:hover::part(link) {
+    a:hover {
       color: var(--primary);
     }
     [part=icon-wrapper] {
