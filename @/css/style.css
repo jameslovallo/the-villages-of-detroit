@@ -312,7 +312,7 @@ snappy-calendar::part(grid) {
 /* developments */
 
 #map {
-  height: calc(100% - 100svh);
+  height: calc(100% - 64px);
   left: 0;
   position: absolute !important;
   top: 64px;
@@ -321,6 +321,7 @@ snappy-calendar::part(grid) {
 
 @media (min-width: 768px) {
   #map {
+    height: calc(100% - 48px);
     top: 48px;
   }
 }
