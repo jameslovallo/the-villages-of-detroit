@@ -358,7 +358,8 @@ snappy-calendar::part(grid) {
   border-top: 1px solid var(--border);
   display: flex;
   justify-content: center;
-  padding-top: 1rem;
+  margin: 0;
+  padding: 1rem;
 }
 
 .development-modal form button {
@@ -368,10 +369,8 @@ snappy-calendar::part(grid) {
   color: var(--on-primary);
   font-size: 14px;
   letter-spacing: 1px;
-  max-width: 12rem;
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
   text-transform: uppercase;
-  width: 100%;
 }
 
 .leaflet-popup-content {
