@@ -41,11 +41,9 @@ ardi({
     nav {
       align-items: center;
       display: flex;
+      height: 64px;
       gap: 1rem;
-      padding: 1rem;
-    }
-    nav > a {
-      height: 100%;
+      padding: 0 1rem;
     }
     a:first-of-type {
       font-weight: bold;

@@ -319,13 +319,6 @@ snappy-calendar::part(grid) {
   width: 100%;
 }
 
-@media (min-width: 768px) {
-  #map {
-    height: calc(100% - 48px);
-    top: 48px;
-  }
-}
-
 .developments::part(footer) {
   display: none;
 }
@@ -337,31 +330,32 @@ snappy-calendar::part(grid) {
 .development-modal {
   border: none;
   border-radius: 0.5rem;
-  box-shadow: 0 5px 15px black;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   height: max-content;
   max-height: 80vh;
   max-width: 90vw;
-  overflow-y: scroll;
   padding: 0;
-  position: relative;
   width: 80ch;
 }
 
-.development-modal form {
-  background: white;
-  border-top: 1px solid var(--border);
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 1rem;
-  position: sticky;
+.development-modal-content {
+  overflow: auto;
+  padding: 0 1rem 3rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  .development-modal form {
-    background: black;
-  }
+.development-modal h2 {
+  border-bottom: 1px solid var(--border);
+  margin: 0;
+  padding: 1rem;
+}
+
+.development-modal form {
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
 }
 
 .development-modal form button {
@@ -369,9 +363,11 @@ snappy-calendar::part(grid) {
   border: none;
   border-radius: 5rem;
   color: var(--on-primary);
-  margin: 0 auto;
+  font-size: 14px;
+  letter-spacing: 1px;
   max-width: 12rem;
   padding: 0.5rem;
+  text-transform: uppercase;
   width: 100%;
 }
 

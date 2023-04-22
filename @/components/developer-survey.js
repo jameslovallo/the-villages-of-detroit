@@ -12,9 +12,15 @@ ardi({
     this.root.innerHTML += `<h3>Developer Survey Response</h3>`
 
     for (let i = 1; i < questions.length; i++) {
+      const question = questions[i].trim()
+      const punc = question.endsWith('?') || question.endsWith('.') ? '' : '?'
       this.root.innerHTML += `
-				<p part="question">${questions[i]}</p>
-				<p part="answer">${response[i] || 'No reponse'}</p>
+				<p part="question">
+          <span part="bubble">${question + punc}</span>
+        </p>
+				<p part="answer">
+          <span part="bubble">${response[i] || 'No reponse'}</span>
+        </p>
 			`
     }
   },
@@ -29,12 +35,27 @@ ardi({
   },
   template: () => '',
   css: /* css */ `
-    [part=question] {
-      color: var(--primary);
-      margin: 0;
-    }
+    [part=question],
     [part=answer] {
-      margin: 0 0 1rem;
+      margin: 2rem 0;
+    }
+    [part=question] {
+      display: flex;
+      justify-content: flex-end;
+    }
+    [part=bubble] {
+      border: 1px solid var(--border);
+      border-radius: .5rem;
+      display: inline-block;
+      max-width: 66%;
+      padding: .5rem;
+    }
+    [part=question] [part=bubble] {
+      background: var(--surface-heavy);
+      border-bottom-right-radius: 2px;
+    }
+    [part=answer] [part=bubble] {
+      border-bottom-left-radius: 2px;
     }
   `,
 })

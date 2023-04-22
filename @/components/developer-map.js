@@ -12,11 +12,15 @@ setTimeout(() => {
     14
   )
 
-  tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-	subdomains: 'abcd',
-	maxZoom: 20
-}).addTo(devMap)
+  tileLayer(
+    'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+    {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      subdomains: 'abcd',
+      maxZoom: 20,
+    }
+  ).addTo(devMap)
 
   developments.forEach((d) => {
     const {
@@ -31,6 +35,7 @@ setTimeout(() => {
         iconUrl: `/@/assets/developments/${color}.svg`,
         iconSize: [32, 32],
         iconAnchor: [16, 30],
+        popupAnchor: [0, -30],
       }),
     }).addTo(devMap)
 
@@ -38,16 +43,16 @@ setTimeout(() => {
       const dialog = document.createElement('dialog')
       document.body.appendChild(dialog)
       dialog.classList.add('development-modal')
+      dialog.innerHTML = `
+        <h2>${title}</h2>
+        <div class="development-modal-content">
+          <developer-survey property="${response}"></developer-survey>
+        </div>
+        <form method="dialog">
+          <button>Close</button>
+        </form>
+      `
       pin.addEventListener('click', () => {
-        dialog.innerHTML = `
-          <div style="padding: 1rem; margin-bottom: 5rem;">
-            <h2>${title}</h2>
-            <developer-survey property="${response}"></developer-survey>
-          </div>
-          <form method="dialog">
-            <button>Close</button>
-          </form>
-				`
         dialog.showModal()
       })
     } else {
