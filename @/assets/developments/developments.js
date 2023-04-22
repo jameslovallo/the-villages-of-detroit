@@ -40,6 +40,7 @@ export default [
     title: 'Single Family Housing',
     position: { lat: 42.3594032, lng: -82.9922847 },
     color: 'green',
+    response: 9,
   },
   {
     title: 'Senior Affordable Development',
@@ -75,12 +76,14 @@ export default [
   {
     title: '130 East Grand Boulevard',
     position: { lat: 42.3482893, lng: -83.0024027 },
-    color: 'red',
+    color: 'green',
+    response: 11,
   },
   {
     title: 'City Duplex Project',
     position: { lat: 42.3624478, lng: -82.9998092 },
-    color: 'red',
+    color: 'green',
+    response: 6,
   },
   {
     title: 'The Kercheval LLC',
@@ -91,6 +94,7 @@ export default [
     title: 'Good Shepherd Church Arts Complex',
     position: { lat: 42.3607513, lng: -82.9840003 },
     color: 'green',
+    response: 12,
   },
   {
     title: 'Kercheval East',
@@ -111,6 +115,7 @@ export default [
     title: '133 East Grand',
     position: { lat: 42.3482493, lng: -83.0030282 },
     color: 'green',
+    response: 8,
   },
   {
     title: 'St. Paul Manor',
@@ -122,6 +127,7 @@ export default [
     title: 'El Tovar',
     position: { lat: 42.3529909, lng: -83.0054744 },
     color: 'green',
+    response: 7,
   },
   {
     title: 'Kingston Arms',
@@ -133,15 +139,18 @@ export default [
     title: 'Capuchin Soup Kitchen',
     position: { lat: 42.3511255, lng: -83.0126872 },
     color: 'green',
+    response: 10,
   },
   {
     title: '9301 Kercheval',
     position: { lat: 42.363452, lng: -82.9876036 },
     color: 'green',
+    response: 13,
   },
   {
     title: 'C9101 East Jefferson',
     position: { lat: 42.3578709, lng: -82.9861874 },
     color: 'green',
+    response: 14,
   },
 ]
