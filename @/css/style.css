@@ -331,13 +331,16 @@ snappy-calendar::part(grid) {
   border: none;
   border-radius: 0.5rem;
   box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
-  display: grid;
   grid-template-rows: auto 1fr auto;
   height: max-content;
   max-height: 80vh;
   max-width: 90vw;
   padding: 0;
   width: 80ch;
+}
+
+.development-modal[open] {
+  display: grid;
 }
 
 .development-modal-content {
