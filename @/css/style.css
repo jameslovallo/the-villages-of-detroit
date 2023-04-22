@@ -376,5 +376,5 @@ snappy-calendar::part(grid) {
 }
 
 .leaflet-touch .leaflet-bar a {
-  font-family: arial;
+  font-family: Arial, Helvetica, sans-serif;
 }
