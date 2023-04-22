@@ -4,13 +4,13 @@ ardi({
   tag: 'app-layout',
   template() {
     return html`
-      <app-nav></app-nav>
-      <main>
+      <app-nav part="nav"></app-nav>
+      <main part="main">
         <app-root>
           <slot></slot>
         </app-root>
       </main>
-      <app-footer></app-footer>
+      <app-footer part="footer"></app-footer>
     `
   },
   css: /* css */ `

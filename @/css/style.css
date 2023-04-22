@@ -312,33 +312,69 @@ snappy-calendar::part(grid) {
 
 /* developments */
 
-.developments {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  height: 100%;
+#map {
+  bottom: 0;
+  left: 0;
+  position: absolute !important;
+  right: 0;
+  top: 64px;
 }
 
-.developments .info {
-  --body-color: black;
-  --heading-color: black;
-  color: black;
+@media (min-width: 768px) {
+  #map {
+    top: 48px;
+  }
 }
 
-.developments .info h3 {
-  margin: 0;
+.developments::part(footer) {
+  display: none;
 }
 
-.developments .info p {
-  align-items: center;
+.developments h1 {
+  display: none;
+}
+
+.development-modal {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px black;
+  height: max-content;
+  max-height: 80vh;
+  max-width: 90vw;
+  overflow-y: scroll;
+  padding: 0;
+  position: relative;
+  width: 80ch;
+}
+
+.development-modal form {
+  background: white;
+  border-top: 1px solid var(--border);
+  bottom: 0;
   display: flex;
-  gap: 0.5em;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem;
+  position: sticky;
 }
 
-.developments .info p:before {
-  color: var(--key);
-  content: '⬤';
+@media (prefers-color-scheme: dark) {
+  .development-modal form {
+    background: black;
+  }
 }
 
-.developments .info a.arrow {
-  color: black;
+.development-modal form button {
+  background: var(--primary);
+  border: none;
+  border-radius: 5rem;
+  color: var(--on-primary);
+  margin: 0 auto;
+  max-width: 12rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.leaflet-popup-content {
+  --heading-color: black;
 }

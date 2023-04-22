@@ -44,11 +44,14 @@ ardi({
       gap: 1rem;
       padding: 1rem;
     }
+    nav > a {
+      height: 100%;
+    }
     a:first-of-type {
       font-weight: bold;
       margin-right: auto;
     }
-    nav > a:last-of-type::part(link) {
+    nav > a:last-of-type {
       background: var(--primary);
       border-radius: 3rem;
       color: var(--on-primary);
@@ -59,7 +62,6 @@ ardi({
       color: inherit;
       display: flex;
       font-size: 1rem;
-      height: 100%;
       text-decoration: none;
     }
     a:hover {
@@ -73,7 +75,7 @@ ardi({
       display: flex;
       height: 2.5rem;
       justify-content: center;
-      margin-left: -.5rem;
+      margin: -.5rem;
       width: 2.5rem;
     }
     [slot=opener]:hover,
