@@ -45,7 +45,7 @@ ardi({
     }
     [part=bubble] {
       border: 1px solid var(--border);
-      border-radius: .5rem;
+      border-radius: 1rem;
       display: inline-block;
       max-width: 66%;
       padding: .5rem;
