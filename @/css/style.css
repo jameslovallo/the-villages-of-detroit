@@ -374,3 +374,7 @@ snappy-calendar::part(grid) {
 .leaflet-popup-content {
   --heading-color: black;
 }
+
+.leaflet-touch .leaflet-bar a {
+  font-family: arial;
+}
