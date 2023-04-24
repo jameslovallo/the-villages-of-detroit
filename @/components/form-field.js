@@ -2,7 +2,6 @@ import ardi from 'https://unpkg.com/ardi'
 
 ardi({
   tag: 'form-field',
-  shadow: true,
   props: {
     label: [String],
     options: [String],
@@ -99,10 +98,9 @@ ardi({
         textareaWrapper.dataset.replicatedValue = textarea.value
       })
     }
-    this.init = true
   },
-  updated() {
-    if (!this.init) this.handleInput()
+  ready() {
+    this.handleInput()
   },
   template() {
     this.innerHTML = this.fieldType()
