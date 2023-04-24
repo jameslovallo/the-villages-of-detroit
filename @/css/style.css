@@ -374,6 +374,33 @@ snappy-calendar::part(grid) {
   text-transform: uppercase;
 }
 
+.question,
+.answer {
+  margin: 2rem 0;
+}
+
+.question {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bubble {
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  display: inline-block;
+  max-width: 66%;
+  padding: 0.5rem;
+}
+
+.question .bubble {
+  background: var(--surface-heavy);
+  border-bottom-right-radius: 2px;
+}
+
+.answer .bubble {
+  border-bottom-left-radius: 2px;
+}
+
 .leaflet-popup-content {
   --heading-color: black;
 }
