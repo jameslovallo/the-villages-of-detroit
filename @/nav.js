@@ -6,5 +6,4 @@ export default [
   { label: 'Who We Are', href: '/who-we-are' },
   { label: 'Contact Us', href: '/contact' },
   { label: 'Donate', href: '/donate' },
-  { label: 'dev', href: '/developments' },
 ]
