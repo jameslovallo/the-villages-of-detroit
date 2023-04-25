@@ -172,10 +172,10 @@ export default [
         .fill(null)
         .map((n, i) => {
           return /* html */ `
-          <two-up percent="50">
-            <img slot="first" src="/@/assets/developments/9301-kercheval/after-${i}.jpg">
-            <img slot="second" src="/@/assets/developments/9301-kercheval/before-${i}.jpg">
-          </two-up>
+          <ardi-compare percent="50">
+            <img src="/@/assets/developments/9301-kercheval/before-${i}-min.jpeg">
+            <img src="/@/assets/developments/9301-kercheval/after-${i}-min.jpeg">
+          </ardi-compare>
         `
         })
         .join(/* html */ `<br>`)}
