@@ -4,7 +4,7 @@ import {
   marker,
   tileLayer,
 } from 'https://cdn.skypack.dev/leaflet@1.9.3'
-import developments from '/@/assets/developments/developments.js'
+import developments from '/@/assets/development/development.js'
 
 window.addEventListener('load', () => {
   // create map
@@ -40,7 +40,7 @@ window.addEventListener('load', () => {
         // create pin
         const pin = marker([lat, lng], {
           icon: icon({
-            iconUrl: `/@/assets/developments/${color}.svg`,
+            iconUrl: `/@/assets/development/${color}.svg`,
             iconSize: [32, 32],
             iconAnchor: [16, 30],
             popupAnchor: [0, -30],
