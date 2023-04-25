@@ -8,10 +8,7 @@ import developments from '/@/assets/developments/developments.js'
 
 window.addEventListener('load', () => {
   // create map
-  const devMap = map('map').setView(
-    [42.361582463007856, -82.99748471510723],
-    14
-  )
+  const devMap = map('map').setView([42.3561336, -82.9998092], 14)
   // create tiles
   tileLayer(
     'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
