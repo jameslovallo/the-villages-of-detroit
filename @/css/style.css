@@ -71,6 +71,13 @@ h1 {
   font-size: 3rem;
 }
 
+hr {
+  background: var(--border);
+  border: none;
+  height: 1px;
+  margin: 2rem 0;
+}
+
 /* links */
 
 a.arrow {

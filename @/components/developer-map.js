@@ -74,14 +74,14 @@ window.addEventListener('load', () => {
           }
           // set dialog markup
           dialog.innerHTML = /* html */ `
-            <h2>${title}</h2>
-            <div class="development-modal-content">
-              ${mediaHTML ? mediaHTML : ''}
-              ${surveyMarkup}
-            </div>
-            <form method="dialog">
-              <button>Close</button>
-            </form>
+          <h2>${title}</h2>
+          <div class="development-modal-content">
+            ${mediaHTML ? mediaHTML : ''}
+            ${surveyMarkup}
+          </div>
+          <form method="dialog">
+            <button>Close</button>
+          </form>
           `
           // show dialog on pin click
           pin.addEventListener('click', () => {
