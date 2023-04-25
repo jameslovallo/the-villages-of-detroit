@@ -344,6 +344,10 @@ snappy-calendar::part(grid) {
   display: grid;
 }
 
+.development-modal h3 {
+  margin-top: 2rem;
+}
+
 .development-modal-content {
   overflow: auto;
   padding: 0 1rem 3rem;
@@ -372,11 +376,6 @@ snappy-calendar::part(grid) {
   letter-spacing: 1px;
   padding: 0.5rem 2rem;
   text-transform: uppercase;
-}
-
-.question,
-.answer {
-  margin: 2rem 0;
 }
 
 .question {

@@ -50,7 +50,7 @@ export default [
   {
     title: 'Affordable Mixed Use Housing',
     position: { lat: 42.3645548, lng: -83.0118416 },
-    color: 'green',
+    color: 'gray',
   },
   {
     title: 'Townhome or Rental',
@@ -66,7 +66,7 @@ export default [
   {
     title: '9226 Kercheval Commercial',
     position: { lat: 42.3629503, lng: -82.9878638 },
-    color: 'green',
+    color: 'red',
   },
   {
     title: 'Townsend Infill Development',
@@ -107,12 +107,12 @@ export default [
     color: 'red',
   },
   {
-    title: '180 East Grand',
+    title: '180 East Grand Boulevard',
     position: { lat: 42.3493277, lng: -83.0030711 },
     color: 'red',
   },
   {
-    title: '133 East Grand',
+    title: '133 East Grand Boulevard',
     position: { lat: 42.3482493, lng: -83.0030282 },
     color: 'green',
     response: 8,
@@ -146,6 +146,20 @@ export default [
     position: { lat: 42.363452, lng: -82.9876036 },
     color: 'green',
     response: 13,
+    mediaHTML: /* html */ `
+      <h3>Before/After Renders</h3>
+      ${Array(4)
+        .fill(null)
+        .map((n, i) => {
+          return /* html */ `
+          <two-up percent="50">
+            <img slot="first" src="/@/assets/developments/9301-kercheval/after-${i}.jpg">
+            <img slot="second" src="/@/assets/developments/9301-kercheval/before-${i}.jpg">
+          </two-up>
+        `
+        })
+        .join(/* html */ `<br>`)}
+    `,
   },
   {
     title: 'C9101 East Jefferson',

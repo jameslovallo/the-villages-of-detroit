@@ -8,7 +8,7 @@ import developments from '/@/assets/developments/developments.js'
 
 window.addEventListener('load', () => {
   // create map
-  const devMap = map(document.querySelector('#map')).setView(
+  const devMap = map('map').setView(
     [42.361582463007856, -82.99748471510723],
     14
   )
@@ -38,6 +38,7 @@ window.addEventListener('load', () => {
           color,
           position: { lat, lng },
           response,
+          mediaHTML,
         } = d
         // create pin
         const pin = marker([lat, lng], {
@@ -75,6 +76,7 @@ window.addEventListener('load', () => {
           dialog.innerHTML = /* html */ `
             <h2>${title}</h2>
             <div class="development-modal-content">
+              ${mediaHTML ? mediaHTML : ''}
               ${surveyMarkup}
             </div>
             <form method="dialog">
@@ -91,4 +93,11 @@ window.addEventListener('load', () => {
         }
       })
     })
+
+  devMap.invalidateSize()
+  for (let i = 0; i <= 2000; i += 100) {
+    setTimeout(() => {
+      devMap.invalidateSize()
+    }, i)
+  }
 })
