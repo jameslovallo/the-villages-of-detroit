@@ -168,6 +168,7 @@ button.arrow {
   border-top: none;
 }
 
+.card .actions a:before,
 .card .actions button:before {
   content: '';
   height: 100%;
@@ -177,7 +178,7 @@ button.arrow {
   width: 100%;
 }
 
-.card .actions > .arrow {
+.card .actions .arrow {
   display: flex;
   justify-content: space-between;
   padding: 0.25rem;

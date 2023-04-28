@@ -16,7 +16,9 @@ ardi({
         </p>
         <div part="footer-nav">
           ${nav.map(
-            (page) => html`<a is="app-link" href=${page.href}>${page.label}</a>`
+            (page) => html`
+              <app-link><a href=${page.href}>${page.label}</a></app-link>
+            `
           )}
         </div>
         <p>© ${new Date().getFullYear()} The Villages of Detroit</p>

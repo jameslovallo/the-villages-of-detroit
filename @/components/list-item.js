@@ -25,7 +25,11 @@ ardi({
     `
     return !this.href.startsWith('/') || this.target
       ? html`<a href=${this.href} target=${this.target}>${content}</a>`
-      : html`<a is="app-link" href=${this.href}>${content}</a>`
+      : html`
+          <app-link>
+            <a href=${this.href}>${content}</a>
+          </app-link>
+        `
   },
   css: /* css */ `
     a {
