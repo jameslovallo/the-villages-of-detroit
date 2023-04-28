@@ -50,7 +50,7 @@ ardi({
         display: flex;
       }
     }
-    [part=footer-nav] a:first-of-type {
+    [part=footer-nav] app-link:first-of-type {
       display: none;
     }
     [part=footer-nav] a {
