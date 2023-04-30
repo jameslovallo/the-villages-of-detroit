@@ -1,4 +1,4 @@
-import ardi, { html } from 'https://unpkg.com/ardi'
+import ardi, { html } from '../assets/ardi-min.js'
 
 ardi({
   tag: 'app-layout',
