@@ -1,4 +1,4 @@
-import ardi, { html } from 'https://unpkg.com/ardi@0.2.15/@/assets/ardi-min.js'
+import ardi, { html } from 'https://unpkg.com/ardi@0.2.16/@/assets/ardi-min.js'
 
 const staff = [
   {
