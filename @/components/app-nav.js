@@ -1,4 +1,4 @@
-import ardi, { html } from 'https://unpkg.com/ardi@0.2.14/@/assets/ardi-min.js'
+import ardi, { html } from 'https://unpkg.com/ardi@0.2.15/@/assets/ardi-min.js'
 import nav from '../nav.js'
 
 ardi({
@@ -20,7 +20,7 @@ ardi({
             ${nav.map(
               (page) =>
                 html`
-                  <app-link>
+                  <app-link preload="true">
                     <a
                       href=${page.href}
                       @click=${() => (this.refs.drawer.open = false)}
@@ -35,7 +35,7 @@ ardi({
         ${nav.map(
           (page) =>
             html`
-              <app-link>
+              <app-link preload="true">
                 <a href=${page.href}>${page.label}</a>
               </app-link>
             `
