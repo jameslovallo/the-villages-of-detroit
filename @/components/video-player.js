@@ -1,4 +1,4 @@
-import ardi, { html } from 'https://unpkg.com/ardi@0.2.16/@/assets/ardi-min.js'
+import ardi, { css, html } from 'https://unpkg.com/ardi'
 
 ardi({
   tag: 'video-player',
@@ -51,41 +51,41 @@ ardi({
     this.playing = !this.playing
     this.refs.video[this.playing ? 'play' : 'pause']()
   },
-  css: /* css */ `
-		:host {
-			aspect-ratio: var(--aspect-ratio, 16/9);
-			position: relative;
-		}
-		video {
-			aspect-ratio: var(--aspect-ratio, 16/9);
-			display: block;
-			height: auto;
-			object-fit: cover;
-			width: 100%;
-		}
-		[part=button] {
+  styles: css`
+    :host {
+      aspect-ratio: var(--aspect-ratio, 16/9);
+      position: relative;
+    }
+    video {
+      aspect-ratio: var(--aspect-ratio, 16/9);
+      display: block;
+      height: auto;
+      object-fit: cover;
+      width: 100%;
+    }
+    [part='button'] {
       align-items: center;
-			background: var(--primary);
+      background: var(--primary);
       border: none;
-			border-radius: 50%;
-			bottom: 1rem;
+      border-radius: 50%;
+      bottom: 1rem;
       box-shadow: 0 0 2px black;
-			cursor: pointer;
+      cursor: pointer;
       display: flex;
-			height: 3rem;
-			left: 1rem;
+      height: 3rem;
+      left: 1rem;
       justify-content: center;
       overflow: hidden;
-			position: absolute;
-			width: 3rem;
-		}
-		[part=icon] {
-			display: block;
-			fill: var(--on-primary);
+      position: absolute;
+      width: 3rem;
+    }
+    [part='icon'] {
+      display: block;
+      fill: var(--on-primary);
       height: 1.5rem;
       width: 1.5rem;
-		}
-    [part=progress] {
+    }
+    [part='progress'] {
       height: 100%;
       left: 0;
       position: absolute;
@@ -94,5 +94,5 @@ ardi({
       transform: scale(125%);
       width: 100%;
     }
-	`,
+  `,
 })

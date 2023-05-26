@@ -1,4 +1,4 @@
-import ardi, { html } from 'https://unpkg.com/ardi@0.2.16/@/assets/ardi-min.js'
+import ardi, { css, html } from 'https://unpkg.com/ardi'
 import nav from '../nav.js'
 
 ardi({
@@ -43,7 +43,7 @@ ardi({
       </nav>
     `
   },
-  css: /* css */ `
+  styles: css`
     nav {
       align-items: center;
       display: flex;
@@ -59,7 +59,7 @@ ardi({
       background: var(--primary);
       border-radius: 3rem;
       color: var(--on-primary);
-      padding: .5rem 1rem;
+      padding: 0.5rem 1rem;
     }
     a {
       align-items: center;
@@ -71,7 +71,7 @@ ardi({
     a:hover {
       color: var(--primary);
     }
-    [slot=opener] {
+    [slot='opener'] {
       align-items: center;
       background: none;
       border-radius: 50%;
@@ -79,26 +79,26 @@ ardi({
       display: flex;
       height: 2.5rem;
       justify-content: center;
-      margin: -.5rem;
+      margin: -0.5rem;
       width: 2.5rem;
     }
-    [slot=opener]:hover,
-    [slot=opener]:focus {
+    [slot='opener']:hover,
+    [slot='opener']:focus {
       background: var(--surface-heavy);
     }
-    [slot=opener] svg {
+    [slot='opener'] svg {
       display: block;
       fill: currentcolor;
       width: 1.5rem;
     }
-    [part=drawer-links] {
+    [part='drawer-links'] {
       display: flex;
       flex-direction: column;
       justify-content: center;
       gap: 1.5rem;
       height: calc(100vh - 2rem);
     }
-    [part=drawer-links] a {
+    [part='drawer-links'] a {
       font-size: 1.25rem;
     }
     nav > app-link:not(:first-of-type):not(:last-of-type) {

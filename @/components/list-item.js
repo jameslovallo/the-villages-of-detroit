@@ -1,4 +1,4 @@
-import ardi, { html } from 'https://unpkg.com/ardi@0.2.16/@/assets/ardi-min.js'
+import ardi, { css, html } from 'https://unpkg.com/ardi'
 
 ardi({
   tag: 'list-item',
@@ -31,7 +31,7 @@ ardi({
           </app-link>
         `
   },
-  css: /* css */ `
+  styles: css`
     a {
       align-items: center;
       color: inherit;
@@ -42,11 +42,11 @@ ardi({
     a:hover {
       color: var(--primary);
     }
-    [part=icon-wrapper] {
+    [part='icon-wrapper'] {
       background: var(--primary);
       border-radius: 50%;
       flex-shrink: 0;
-      padding: .5rem;
+      padding: 0.5rem;
     }
     svg {
       display: block;
@@ -54,9 +54,9 @@ ardi({
       height: 1.5rem;
       width: 1.5rem;
     }
-    [part=text-wrapper] {
+    [part='text-wrapper'] {
       display: grid;
-      gap: .25rem;
+      gap: 0.25rem;
       line-height: 1;
     }
   `,

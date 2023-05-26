@@ -1,4 +1,4 @@
-import ardi from 'https://unpkg.com/ardi@0.2.16/@/assets/ardi-min.js'
+import ardi from 'https://unpkg.com/ardi'
 
 ardi({
   tag: 'form-field',

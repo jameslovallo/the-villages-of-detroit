@@ -1,4 +1,4 @@
-import ardi, { html } from 'https://unpkg.com/ardi@0.2.16/@/assets/ardi-min.js'
+import ardi, { css, html } from 'https://unpkg.com/ardi'
 import '/@/components/form-field.js'
 
 ardi({
@@ -33,22 +33,22 @@ ardi({
       </form>
     `
   },
-  css: /* css */ `
-		@import "/@/css/formfield.css";
-		form {
-			display: grid;
-			gap: 1rem;
-			grid-template-columns: repeat(2, 1fr);
-		}
-		form button {
-			background: var(--primary);
-			border: none;
-			border-radius: 3rem;
-			color: var(--on-primary);
-			cursor: pointer;
+  styles: css`
+    @import '/@/css/formfield.css';
+    form {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    form button {
+      background: var(--primary);
+      border: none;
+      border-radius: 3rem;
+      color: var(--on-primary);
+      cursor: pointer;
       letter-spacing: 1;
-			padding: .75rem 1.5rem;
+      padding: 0.75rem 1.5rem;
       text-transform: uppercase;
-		}
-	`,
+    }
+  `,
 })

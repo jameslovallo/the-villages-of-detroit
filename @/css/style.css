@@ -26,6 +26,7 @@ body {
     --heading-color: white;
     --primary: var(--light-purple);
     --on-primary: black;
+    --surface: #252230;
   }
 }
 

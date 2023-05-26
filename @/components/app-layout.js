@@ -1,4 +1,4 @@
-import ardi, { html } from 'https://unpkg.com/ardi@0.2.16/@/assets/ardi-min.js'
+import ardi, { css, html } from 'https://unpkg.com/ardi'
 
 ardi({
   tag: 'app-layout',
@@ -13,7 +13,7 @@ ardi({
       <app-footer part="footer"></app-footer>
     `
   },
-  css: /* css */ `
+  styles: css`
     main {
       line-height: 1.5;
       margin: 0 auto;

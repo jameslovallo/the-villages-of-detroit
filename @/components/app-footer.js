@@ -1,4 +1,4 @@
-import ardi, { html } from 'https://unpkg.com/ardi@0.2.16/@/assets/ardi-min.js'
+import ardi, { css, html } from 'https://unpkg.com/ardi'
 import nav from '../nav.js'
 
 ardi({
@@ -29,8 +29,8 @@ ardi({
       </footer>
     `
   },
-  css: /* css */ `
-    @import "/@/css/style.css";
+  styles: css`
+    @import '/@/css/style.css';
     :host {
       background: var(--surface);
       display: block;
@@ -40,24 +40,24 @@ ardi({
       text-align: center;
       top: 100vh;
     }
-    [part=footer-nav] {
+    [part='footer-nav'] {
       display: none;
       gap: 1rem;
       justify-content: center;
     }
     @media (min-width: 768px) {
-      [part=footer-nav] {
+      [part='footer-nav'] {
         display: flex;
       }
     }
-    [part=footer-nav] app-link:first-of-type {
+    [part='footer-nav'] app-link:first-of-type {
       display: none;
     }
-    [part=footer-nav] a {
+    [part='footer-nav'] a {
       color: var(--heading-color);
       text-decoration: none;
     }
-    [part=footer-nav] a:hover {
+    [part='footer-nav'] a:hover {
       color: var(--primary);
       text-decoration: underline;
     }

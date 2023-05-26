@@ -1,7 +1,7 @@
 import 'https://unpkg.com/@snappywc/calendar'
-import 'https://unpkg.com/ardi@0.2.16/@/components/app-link.js'
-import 'https://unpkg.com/ardi@0.2.16/@/components/app-root.js'
-import 'https://unpkg.com/ardi@0.2.16/demos/dialog/dialog.js'
+import 'https://unpkg.com/ardi/@/components/app-link.js'
+import 'https://unpkg.com/ardi/@/components/app-root.js'
+import 'https://unpkg.com/ardi/demos/dialog/dialog.js'
 
 // load global components
 const globals = ['app-layout', 'app-nav', 'app-footer', 'list-item']
