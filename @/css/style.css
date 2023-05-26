@@ -81,8 +81,12 @@ hr {
 
 /* links */
 
-a.arrow {
+a {
   color: inherit;
+  text-decoration-color: var(--primary);
+}
+
+a.arrow {
   text-decoration: none;
 }
 

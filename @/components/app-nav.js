@@ -65,7 +65,7 @@ ardi({
       align-items: center;
       color: inherit;
       display: flex;
-      font-size: 1rem;
+      font-size: 14px;
       text-decoration: none;
     }
     a:hover {
