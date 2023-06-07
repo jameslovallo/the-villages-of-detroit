@@ -314,13 +314,31 @@ button.close:focus {
 /* events */
 
 snappy-calendar {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 0.5rem;
+  margin-top: 1rem;
+  text-align: left;
 }
 
-snappy-calendar::part(grid) {
-  padding: 0 1rem;
+snappy-calendar::part(header) {
+  justify-content: flex-start;
+  font-weight: bold;
+  order: 0;
+}
+
+snappy-calendar::part(date) {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: auto;
+  order: 0;
+}
+
+snappy-calendar::part(prev) {
+  font-weight: bold;
+  order: 1;
+}
+
+snappy-calendar::part(next) {
+  font-weight: bold;
+  order: 2;
 }
 
 /* developments */
