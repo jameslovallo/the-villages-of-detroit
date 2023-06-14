@@ -259,7 +259,9 @@ button.close:focus {
   line-height: 1;
 }
 
-.home .video video-player {
+.home .video ardi-video {
+  --button-background: var(--primary);
+  --button-foreground: var(--on-primary);
   aspect-ratio: 16/9;
   background: transparent;
   border: 1px solid var(--border);

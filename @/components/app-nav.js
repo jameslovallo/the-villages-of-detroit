@@ -55,6 +55,9 @@ ardi({
       font-weight: bold;
       margin-right: auto;
     }
+    app-link:first-of-type a {
+      font-size: 1rem;
+    }
     nav > app-link:last-of-type {
       background: var(--primary);
       border-radius: 3rem;
