@@ -64,7 +64,7 @@ window.addEventListener('load', () => {
               </p>
               <p class="answer">
                 <span class="bubble">
-                ${values[response][i] || 'No reponse'}
+                ${values[response - 1][i] || 'No reponse'}
                 </span>
               </p>
             `
