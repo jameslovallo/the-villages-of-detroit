@@ -49,10 +49,6 @@ img {
 	width: 100%;
 }
 
-iframe {
-	height: 550px;
-}
-
 img {
 	height: auto;
 }
@@ -285,8 +281,8 @@ button.close:focus {
 }
 
 .home .the-village-people a {
-	border-top: 1px solid white;
-	border-bottom: 1px solid white;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
 	display: inline-block;
 	padding: 0.5rem 1rem;
 	text-decoration: none;
@@ -331,6 +327,12 @@ button.close:focus {
 		margin: 0;
 		padding: 1rem;
 	}
+}
+
+/* our community */
+
+.our-community iframe {
+	height: 550px;
 }
 
 /* what we do */
