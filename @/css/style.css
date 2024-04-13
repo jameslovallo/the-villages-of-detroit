@@ -256,6 +256,8 @@ button.close:focus {
 }
 
 .home .the-village-people {
+	background-color: #000000;
+	background-image: url('/@/assets/home/3px-tile.png');
 	border: 1px solid rgba(125, 125, 125, 0.5);
 	border-radius: 2rem;
 	padding: 2rem;
