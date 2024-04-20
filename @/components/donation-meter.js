@@ -16,11 +16,17 @@ ardi({
 	},
 	template() {
 		return html`
-			<h3>Help us meet our goal!</h3>
+			<h3>Help us meet our goal of $15,000!</h3>
 			<div part="thermometer">
 				<div part="track" style=${`--gross: ${this.gross}`}></div>
 			</div>
-			<p>
+			<div
+				style="display: flex; justify-content: space-between; margin-top: -1em;"
+			>
+				<small>$0</small>
+				<small>$15,000</small>
+			</div>
+			<p style="margin-top: -1em">
 				Can't attend?
 				<a href="https://syndon.us/campaign/the%20villages%20of%20detroit">
 					Donate!
