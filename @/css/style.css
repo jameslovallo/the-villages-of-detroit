@@ -296,6 +296,24 @@ button.close:focus {
 	text-shadow: 0 0 15px #92d5da;
 }
 
+.home .sponsors {
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.home .sponsors div {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3rem;
+	justify-content: center;
+}
+
+.home .sponsors img {
+	border-radius: 0.25rem;
+	height: 5rem;
+	width: auto;
+}
+
 .home .video ardi-video {
 	--button-background: var(--primary);
 	--button-foreground: var(--on-primary);
